@@ -137,6 +137,7 @@ body {
 .label {
   margin: 3rem 0;
   margin-left: 24rem;
+  margin-right: 1rem;
   font-size: 50px;
 }
 
@@ -160,6 +161,14 @@ body {
 
   .label {
     margin-left: 1rem;
+    font-size: 30px;
+  }
+
+  .news__title {
+    font-size: 20px;
+  }
+  .news__text {
+    font-size: 14px;
   }
 }
 
