@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Roboto+Slab:400,700,900|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="{% static 'main_app/style.css' %}">
     <title>School-Licey №4</title>
 </head>
@@ -22,36 +24,25 @@
         </div>
     </header>
     <div class="sidebar">
-        <a href="#" class="sidebar__item">главная</a>
-        <a href="#" class="sidebar__item">о школа</a>
-        <a href="#" class="sidebar__item">учителя</a>
-        <a href="#" class="sidebar__item">больше информации</a>
-    </div>
-    <div class="news">
-        
-        <div class="news__item">
-            <h1 class="news__title">Some title</h1>
-            <p class="news__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <a href="/" class="sidebar__item">информационный блок</a>
+            <a href="#" class="sidebar__item">стратегия развития школы</a>
+            <a href="#" class="sidebar__item">администрация школы</a>
+            <a href="#" class="sidebar__item">получение документов в 1 классе</a>
+            <a href="#" class="sidebar__item">учебный процесс</a>
+            <a href="#" class="sidebar__item">летние каникулы</a>
+            <a href="#" class="sidebar__item">HLS/VET</a>
+            <a href="#" class="sidebar__item">методический кабинет</a>
+            <a href="#" class="sidebar__item">работа с одаренными детьми</a>
+            <a href="#" class="sidebar__item">библиотека</a>
+            <a href="#" class="sidebar__item">безопасный интернет</a>
+            <a href="/news" class="sidebar__item">школьные новости</a>
         </div>
-        <div class="news__item">
-            <h1 class="news__title">Some title</h1>
-            <p class="news__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h1 class="label">{{ label }}</h1>
+        <div class="main">
+            {% block content %}
+            {% endblock %}
         </div>
-        <div class="news__item">
-            <h1 class="news__title">Some title</h1>
-            <p class="news__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-        <div class="news__item">
-            <h1 class="news__title">Some title</h1>
-            <p class="news__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-        <div class="news__item">
-            <h1 class="news__title">Some title</h1>
-            <p class="news__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-    </div>
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="{% static 'main_app/script.js' %}"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
