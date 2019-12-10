@@ -157,6 +157,10 @@ body {
   .main {
     margin-left: 1rem;
   }
+
+  .label {
+    margin-left: 1rem;
+  }
 }
 
 @media screen and (min-width:721px) {
