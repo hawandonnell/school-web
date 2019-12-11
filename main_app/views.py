@@ -1,11 +1,15 @@
 from django.shortcuts import render
+from .models import *
 
-def information_block(request):
-    return render(request, 'main_app/information.html', {
-        "label": "Информационный Блок"
+
+def main_page(request):
+    return render(request, 'main_app/main.html', {
+        "label": "Главная Страница"
     })
 
 def news(request):
+    new_S = New.objects.all()
     return render(request, 'main_app/news.html', {
-        "label": "Школьные Новости"
+        "label": "Школьные Новости",
+        "news": new_S
     })

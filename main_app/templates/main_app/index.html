@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Roboto+Slab:400,700,900|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="{% static 'main_app/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main_app/owl.theme.default.min.css' %}">
     <link rel="stylesheet" href="{% static 'main_app/style.css' %}">
     <title>School-Licey №4</title>
 </head>
@@ -17,32 +18,30 @@
                 <h1 class="logo">School-Licey</h1>
                 <button class="nav_btn">
                     <div class="nav_btn__line"></div>
-                    <div class="nav_btn__line"></div>
+                    <div class="nav_btn__line nav_btn__line2"></div>
                     <div class="nav_btn__line"></div>
                 </button>
             </div>
         </div>
     </header>
     <div class="sidebar">
-            <a href="/" class="sidebar__item">информационный блок</a>
-            <a href="#" class="sidebar__item">стратегия развития школы</a>
-            <a href="#" class="sidebar__item">администрация школы</a>
-            <a href="#" class="sidebar__item">получение документов в 1 классе</a>
-            <a href="#" class="sidebar__item">учебный процесс</a>
-            <a href="#" class="sidebar__item">летние каникулы</a>
-            <a href="#" class="sidebar__item">HLS/VET</a>
-            <a href="#" class="sidebar__item">методический кабинет</a>
-            <a href="#" class="sidebar__item">работа с одаренными детьми</a>
-            <a href="#" class="sidebar__item">библиотека</a>
-            <a href="#" class="sidebar__item">безопасный интернет</a>
-            <a href="/news" class="sidebar__item">школьные новости</a>
+            <a href="/" class="sidebar__item">главная страница</a>
+            <a href="/news" class="sidebar__item">новости школы</a>
+            <a href="#" class="sidebar__item">история школы</a>
+            <a href="#" class="sidebar__item">обратная связь</a>
+            <a href="#" class="sidebar__item">учебно-методическая служба</a>
+            <a href="#" class="sidebar__item">летний отдых</a>
+            <a href="#" class="sidebar__item">Социально-психологическая служба</a>
+            <a href="#" class="sidebar__item">Для учащихся</a>
         </div>
         <h1 class="label">{{ label }}</h1>
         <div class="main">
             {% block content %}
             {% endblock %}
         </div>
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="{% static 'main_app/owl.carousel.min.js' %}"></script>
     <script src="{% static 'main_app/script.js' %}"></script>
 </body>
 </html>
