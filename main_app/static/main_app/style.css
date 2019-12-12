@@ -150,24 +150,32 @@ body {
   margin: 0.25rem 0;
 }
 
-
-.owl-carousel {
-  margin-left: 21.5rem;
+.admin_link {
+  padding: 1rem;
+  border-radius: .3rem;
 }
-.slider__item {
-  height: 150px;
+.admin_link:hover {
+  background-color: #ffdfe6;
 }
-
-.slider__item1 {
-  background: url('./img/131614991555dd88900de1f2.88529351_articles_main_big.jpg') no-repeat center / cover;
-}
-
-.slider__item2 {
-  background: url('./img/depositphotos_51325433-stock-photo-intelligent-group-of-school-children.jpg') no-repeat center / cover;
+.search_icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 1rem;
+  background: url('./img/search.png') no-repeat center / cover;
 }
 
-.slider__item3 {
-  background: url('./img/internet13_w960.jpg') no-repeat center / cover;
+.search__input {
+  padding: .5rem;
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  font-family: 'Roboto';
+  background-color: #eedce0;
+}
+.search {
+  display: flex;
+  
+  align-items: center;
 }
 
 @media screen and (max-width:720px) {
