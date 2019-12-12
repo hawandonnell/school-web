@@ -5,4 +5,7 @@ $(document).ready(() => {
     $('.admin_icon').click(() => {
         window.location.replace('admin')
     })
+    $('.search_icon').click(() => {
+        $('.search__input').toggleClass('search__input_active')
+    })
 });
