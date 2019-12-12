@@ -2,8 +2,7 @@ $(document).ready(() => {
     $('.nav_btn').click(() => {
         $('.sidebar').toggleClass('sidebar_hided');
     })
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        items:1
+    $('.admin_icon').click(() => {
+        window.location.replace('admin')
     })
 });

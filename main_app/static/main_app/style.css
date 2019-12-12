@@ -154,19 +154,21 @@ body {
   padding: 1rem;
   border-radius: .3rem;
 }
-.admin_link:hover {
-  background-color: #ffdfe6;
-}
 .search_icon {
   width: 16px;
   height: 16px;
   margin-left: 1rem;
   background: url('./img/search.png') no-repeat center / cover;
 }
-
 .admin_block {
   display: flex;
   align-items: center;
+}
+.admin_icon {
+  display: none;
+  width: 16px;
+  height: 16px;
+  background: url('./img/icon.png') no-repeat center / cover;
 }
 .search__input {
   padding: .5rem;
@@ -181,7 +183,9 @@ body {
   
   align-items: center;
 }
-
+.admin_icon:hover {
+  cursor: pointer;
+}
 @media screen and (max-width:720px) {
   .nav_btn {
     display: block;
@@ -204,6 +208,12 @@ body {
   .label {
     font-size: 30px;
     margin-left: 1rem;
+  }
+  .admin_icon {
+    display: block;
+  }
+  .admin_link {
+    display: none;
   }
 }
 
