@@ -184,12 +184,12 @@ body {
   font-family: 'Roboto';
   background-color: #eedce0;
   position: absolute;
-  left: 265px;
+  left: 8rem;
   pointer-events: none;
   opacity: 0;
 }
 .search__input_active {
-  transform: translateY(70px);
+  transform: translateY(60px);
   pointer-events: all;
   opacity: 1;
 }
@@ -283,7 +283,7 @@ body {
 }
 @media screen and (max-width: 425px) {
   .logo {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .label {
     font-size: 1rem;
