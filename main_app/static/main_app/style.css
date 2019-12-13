@@ -110,6 +110,9 @@ body {
   border: none;
   display: none;
   position: relative;
+  width: 8px;
+  height: 8px;
+  background: black;
 }
 
 .nav_btn:hover {
@@ -205,9 +208,6 @@ body {
     display: block;
   }
 
-  .news {
-    margin-left: 1rem;
-  }
 
   .sidebar {
     background-color: #f4f4f4;
@@ -234,6 +234,16 @@ body {
   }
 }
 
+.history_txt {
+  font-family: 'Roboto'; 
+  margin-bottom: 2rem;
+}
+
+.history_link {
+  font-family: 'Roboto';
+  margin: 2rem 0;
+}
+
 @media screen and (min-width:721px) {
   .sidebar {
     opacity: 1;
@@ -248,5 +258,56 @@ body {
     transform: translateY(0);
     opacity: 1;
     pointer-events: all;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .label {
+    font-size: 1.5rem;
+  }
+  .history_txt {
+    font-size: 1.5rem;
+  }
+  .history_link {
+    font-size: 1.5rem;
+  }
+  .news__item {
+    padding: 1.5rem;
+  }
+  .news__title {
+    font-size: 1.5rem;
+  }
+  .news__text {
+    font-size: .8rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .logo {
+    font-size: 1rem;
+  }
+  .label {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .history_txt {
+    font-size: 1rem;
+  }
+  .history_link {
+    font-size: 1rem;
+  }
+  .news__title {
+    font-size: 1rem;
+  }
+  .news__text {
+    font-size: .7rem;
+  }
+  .news__item {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .search_input {
+    left: 8rem;
   }
 }

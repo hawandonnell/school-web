@@ -1,4 +1,5 @@
 $(document).ready(() => {
+    $('.sidebar').addClass('sidebar_hided')
     $('.nav_btn').click(() => {
         $('.sidebar').toggleClass('sidebar_hided');
     })

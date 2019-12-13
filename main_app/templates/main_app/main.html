@@ -3,11 +3,11 @@
 {% load static %}
 
 {% block content %}
-  <h1 style="font-size: 1.5rem; font-family: 'Roboto'; margin-bottom: 2rem;">Школа-лицей № 4 имени Абая была открыта в 1986 году.<br><a href="/history" class="history_link">Читать далее...</a></h1>
+  <h1 class="history_txt">Школа-лицей № 4 имени Абая была открыта в 1986 году.<br><a href="/history">Читать далее...</a></h1>
   <hr>
-  <h1 style="font-size: 1.5rem; font-family: 'Roboto'; margin: 2rem 0;"><a href="/news"> Последние новости</a></h1>
+  <h1 class="history_link"><a href="/news">Последние новости</a></h1>
   <div class="news">
-      <div class="news__item" style="border: .2px solid #f4f4f4;">
+      <div class="news__item">
           <h1 class="news__title">{{ news.title }}</h1>
           <p class="news__text">{{ news.text }}</p>
           <div class="published">
