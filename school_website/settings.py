@@ -126,9 +126,18 @@ DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SECURE_SSL_REDIRECT = True
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-django_heroku.settings(locals())
+
+SECURE_HSTS_SECONDS = 3600 # HTTP TO HTTPS REDIRECTING
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_HSTS_PRELOAD = True 
+SECURE_REFERRER_POLICY = 'same-origin'
+
+# django_heroku.settings(locals())
