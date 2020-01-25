@@ -140,4 +140,4 @@ CSRF_COOKIE_SECURE = True
 SECURE_HSTS_PRELOAD = True 
 SECURE_REFERRER_POLICY = 'same-origin'
 
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
