@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import *
+from django.http import HttpResponse
 
 
 def main_page(request):
@@ -25,3 +26,4 @@ def slujba(request):
     return render(request, 'main_app/slujba.html', {
         "label": "Учебно-Методическая Служба"
     })
+
